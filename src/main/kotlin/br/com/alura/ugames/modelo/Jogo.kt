@@ -1,9 +1,11 @@
+package br.com.alura.ugames.modelo
+
 data class Jogo(val titulo: String,
-           val capa: String) {
-    val descricao = ""
+                val capa: String) {
+    var descricao: String? = null
 
     override fun toString(): String {
-        return "Meu Jogo: \n" +
+        return "Meu jogo: \n" +
                 "Título: $titulo \n" +
                 "Capa: $capa \n" +
                 "Descrição: $descricao"
